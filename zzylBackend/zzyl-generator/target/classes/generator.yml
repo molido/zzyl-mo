@@ -1,0 +1,7 @@
+gen:
+  author: zzyl
+  packageName: com.zzyl
+  autoRemovePre: true
+  tablePrefix: sys_
+  allowOverwrite: false
+

@@ -1,0 +1,130 @@
+@import '@/assets/styles/variables.module.scss';
+// 信息提示区域样式定义
+.info{
+    // 搜索PDF按钮样式
+    .searchPdf{
+      color:#409EFF ; // 按钮文字颜色设置为蓝色
+    }
+  }
+  
+  // 文本居中样式
+  .center{
+    text-align: center; // 将文本内容居中对齐
+  }
+  
+  // 家属信息表格样式定义
+  .family{
+    // 表头样式
+    .tableHead{
+      display: flex; // 使用弹性布局使得表头元素水平排列
+      background-color: #f3f8f9; // 设置背景颜色为淡灰色
+      height: 50px; line-height: 50px; // 设置表头高度及行高以适应内容
+      font-size: 14px; // 字体大小设置为14px
+      justify-content:center; // 使表头元素左右间距均匀分布
+      padding: 0 10px; // 内边距设置为左右20px
+      text-align: center;
+      &>div{
+        flex: 1;
+      }
+    }
+    // 表体样式
+    .tableBody{
+      // 表格列样式
+      width: 800px;
+      height: 300px;
+      overflow-y: scroll;
+      .tableColumn{
+        display: flex; // 使用弹性布局使得表格列元素水平排列
+        justify-content: space-around; // 使表格列元素左右间距均匀分布
+        height: 50px; 
+        line-height: 50px; // 设置表格行高及高度以适应内容
+        .column {
+          flex: 1;
+          text-align: center;
+          padding: 0 10px;
+          .el-icon{
+            font-size: 16px;
+            margin:  0 5px;
+            
+            &.add{
+              color: $--color-main;
+            }
+            &.delect{
+              color: $red;
+            }
+          }
+        }
+      }
+    }
+  }
+  .elcolFlex{
+    display: flex !important;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .el-form-item{
+      width: 50%;
+    }
+  }
+
+
+
+  .tableColumn .column {
+  padding: 8px;
+  margin-bottom: 10px; /* 每个输入项之间留出空隙 */
+}
+.tableColumn .column .el-select,
+.tableColumn .column .el-time-picker,
+.tableColumn .column .el-input-number {
+  width: 100%;
+}
+.add, .delect {
+  cursor: pointer;
+  margin: 0 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+.add:hover {
+  color: #409EFF; /* 蓝色 */
+}
+
+.delect:hover {
+  color: #F56C6C; /* 红色 */
+}
+.tableHead {
+  display: flex;
+  background-color: #f5f7fa;
+  font-weight: bold;
+  padding: 10px 0;
+  border-bottom: 1px solid #ebeef5;
+}
+
+.tableHead div {
+  flex: 1;
+  text-align: center;
+  padding: 5px 0;
+}
+.el-form-item {
+  margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+  .tableColumn .column {
+    flex-direction: column;
+  }
+
+  .tableColumn .column .el-select,
+  .tableColumn .column .el-time-picker,
+  .tableColumn .column .el-input-number {
+    width: 100%;
+  }
+}
+
+.info.family {
+  border: 1px solid #ebeef5;
+  border-radius: 4px;
+  padding: 15px;
+  background-color: #fff;
+}
+.el-dialog__body {
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}

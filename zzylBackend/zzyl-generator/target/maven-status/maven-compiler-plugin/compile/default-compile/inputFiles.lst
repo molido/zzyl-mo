@@ -1,0 +1,13 @@
+/Users/molido/code/zzylBackend/zzyl-generator/src/main/java/com/zzyl/generator/config/GenConfig.java
+/Users/molido/code/zzylBackend/zzyl-generator/src/main/java/com/zzyl/generator/controller/GenController.java
+/Users/molido/code/zzylBackend/zzyl-generator/src/main/java/com/zzyl/generator/domain/GenTable.java
+/Users/molido/code/zzylBackend/zzyl-generator/src/main/java/com/zzyl/generator/domain/GenTableColumn.java
+/Users/molido/code/zzylBackend/zzyl-generator/src/main/java/com/zzyl/generator/mapper/GenTableColumnMapper.java
+/Users/molido/code/zzylBackend/zzyl-generator/src/main/java/com/zzyl/generator/mapper/GenTableMapper.java
+/Users/molido/code/zzylBackend/zzyl-generator/src/main/java/com/zzyl/generator/service/GenTableColumnServiceImpl.java
+/Users/molido/code/zzylBackend/zzyl-generator/src/main/java/com/zzyl/generator/service/GenTableServiceImpl.java
+/Users/molido/code/zzylBackend/zzyl-generator/src/main/java/com/zzyl/generator/service/IGenTableColumnService.java
+/Users/molido/code/zzylBackend/zzyl-generator/src/main/java/com/zzyl/generator/service/IGenTableService.java
+/Users/molido/code/zzylBackend/zzyl-generator/src/main/java/com/zzyl/generator/util/GenUtils.java
+/Users/molido/code/zzylBackend/zzyl-generator/src/main/java/com/zzyl/generator/util/VelocityInitializer.java
+/Users/molido/code/zzylBackend/zzyl-generator/src/main/java/com/zzyl/generator/util/VelocityUtils.java

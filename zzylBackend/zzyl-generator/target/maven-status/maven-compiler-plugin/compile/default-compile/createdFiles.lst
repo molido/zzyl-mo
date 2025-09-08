@@ -1,0 +1,13 @@
+com/zzyl/generator/controller/GenController.class
+com/zzyl/generator/util/VelocityUtils.class
+com/zzyl/generator/config/GenConfig.class
+com/zzyl/generator/service/IGenTableColumnService.class
+com/zzyl/generator/service/GenTableServiceImpl.class
+com/zzyl/generator/mapper/GenTableMapper.class
+com/zzyl/generator/mapper/GenTableColumnMapper.class
+com/zzyl/generator/service/IGenTableService.class
+com/zzyl/generator/util/VelocityInitializer.class
+com/zzyl/generator/util/GenUtils.class
+com/zzyl/generator/domain/GenTable.class
+com/zzyl/generator/domain/GenTableColumn.class
+com/zzyl/generator/service/GenTableColumnServiceImpl.class

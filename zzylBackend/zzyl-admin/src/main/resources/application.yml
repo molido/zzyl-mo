@@ -1,0 +1,74 @@
+server:
+  port: 8080
+  tomcat:
+    uri-encoding: UTF-8
+
+spring:
+  application:
+    name: zzyl-admin
+  messages:
+    basename: i18n/messages
+    encoding: UTF-8
+  mvc:
+    charset: UTF-8
+    locale: zh_CN
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+  datasource:
+    druid:
+      master:
+        driverClassName: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://127.0.0.1:30306/zzyl?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true
+        username: root
+        password: MyRootPass123
+        connectionProperties: useUnicode=true;characterEncoding=UTF-8;serverTimezone=Asia/Shanghai
+      # 可选的从库，如无可删除整个 slave 块
+      slave:
+        enabled: false
+      initialSize: 5
+      minIdle: 5
+      maxActive: 20
+      maxWait: 60000
+      connectTimeout: 30000
+      socketTimeout: 60000
+      timeBetweenEvictionRunsMillis: 60000
+      minEvictableIdleTimeMillis: 300000
+      maxEvictableIdleTimeMillis: 900000
+      validationQuery: SELECT 1
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+  data:
+    redis:
+      host: 127.0.0.1
+      port: 30079
+      password:
+      database: 0
+
+# Token 配置（与代码中的 @Value 保持一致）
+token:
+  header: Authorization
+  secret: zzylSecretKeyChangeMe
+  expireTime: 30
+
+# XSS 过滤配置（与 FilterConfig 的 @Value 保持一致）
+xss:
+  enabled: true
+  excludes: /system/notice/*,/tool/*,/swagger-ui/*,/v3/api-docs/*
+  urlPatterns: /*
+
+mybatis:
+  typeAliasesPackage: com.zzyl.**.domain
+  mapperLocations: classpath*:mapper/**/*Mapper.xml
+  configLocation: classpath:mybatis/mybatis-config.xml
+
+user:
+  password:
+    maxRetryCount: 5
+    lockTime: 10
+
+ruoyi:
+  captchaType: math
